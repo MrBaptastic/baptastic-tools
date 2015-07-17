@@ -1,2 +1,2 @@
 # baptastic-tools
-Set of tools to facilitate DnD and dboardgames tracking
+Set of tools to facilitate DnD and boardgames tracking
