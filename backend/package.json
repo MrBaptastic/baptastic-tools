@@ -1,0 +1,23 @@
+{
+  "name": "baptastic-tools-backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "launch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MrBaptastic/baptastic-tools.git"
+  },
+  "author": "Adam Brady <adam@boxxen.org>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/MrBaptastic/baptastic-tools/issues"
+  },
+  "homepage": "https://github.com/MrBaptastic/baptastic-tools#readme",
+  "dependencies": {
+    "babel": "^5.6.23",
+    "mongoose": "^4.0.7"
+  }
+}
