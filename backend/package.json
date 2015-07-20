@@ -18,6 +18,7 @@
   "homepage": "https://github.com/MrBaptastic/baptastic-tools#readme",
   "dependencies": {
     "babel": "^5.6.23",
+    "express": "^4.13.1",
     "mongoose": "^4.0.7"
   }
 }
