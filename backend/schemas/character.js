@@ -4,23 +4,29 @@ import { Schema } from "mongoose";
 import Injury from "./injury";
 
 export default new Schema({
-  name:              { type: String     },
-  career:            { type: String     },
-  specTrees:         { type: String     }, // ???
-  gender:            { type: String     },
-  age:               { type: Number     },
-  height:            { type: Number     },
-  build:             { type: String     },
-  hair:              { type: String     },
-  eyes:              { type: String     },
-  features:          { type: String     },
-  soakValue:         { type: Number     },
-  woundThreshold:    { type: Number     },
-  wouldCurrent:      { type: Number     },
-  strainThreshold:   { type: Number     },
-  strainCurrent:     { type: Number     },
-  defenseRanged:     { type: Number     },
-  defenseMelee:      { type: Number     },
+  name:              { type: String },
+  career:            { type: String },
+  specTrees:         { type: String }, // ???
+  gender:            { type: String },
+  age:               { type: Number },
+  height:            { type: Number },
+  build:             { type: String },
+  hair:              { type: String },
+  eyes:              { type: String },
+  features:          { type: String },
+  soakValue:         { type: Number },
+  wound: {
+    threshold: { type: Number },
+    current:   { type: Number },
+  }
+  strain: {
+    threshold: { type: Number },
+    current:   { type: Number }
+  },
+  defense: {
+    ranged: { type: Number },
+    melee:  { type: Number },
+  }
   brawn:             { type: Number     },
   agility:           { type: Number     },
   intellect:         { type: Number     },

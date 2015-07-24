@@ -11,14 +11,20 @@ export default new Schema({
   speed:                  { type: Number, required: true },
   handling:               { type: Number, required: true },
   armor:                  { type: Number, required: true },
-  hullTraumaThreshold:    { type: Number, required: true },
-  hullTraumaCurrent:      { type: Number, required: true },
-  systemStrainThreshold:  { type: Number, required: true },
-  systemStrainCurrent:    { type: Number, required: true },
-  defenseFore:            { type: Number, required: true },
-  defenseStarboard:       { type: Number, required: true },
-  defenseAft:             { type: Number, required: true },
-  defensePort:            { type: Number, required: true },
+  hullTrauma: {
+    threshold: { type: Number, required: true },
+    current:   { type: Number, required: true },
+  },
+  systemStrain: {
+    threshold:  { type: Number, required: true },
+    current:    { type: Number, required: true },
+  },
+  defense: {
+    fore:      { type: Number, required: true },
+    starboard: { type: Number, required: true },
+    aft:       { type: Number, required: true },
+    port:      { type: Number, required: true },
+  },
   weapons: [ vehicleWeapon ],
   cargo: [ { type: String } ]
 });
